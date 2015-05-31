@@ -1,4 +1,4 @@
-# random-array
+# random-array [![Build Status](https://travis-ci.org/saromanov/random-array.svg?branch=master)](https://travis-ci.org/saromanov/random-array)
 Generating  array of random numbers
 
 # Install
