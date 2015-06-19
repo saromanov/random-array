@@ -1,6 +1,6 @@
 {
   "name": "random-array",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create array with random numbers",
   "main": "index.js",
   "scripts": {
