@@ -31,5 +31,10 @@ and output:
 ```
 Because was found value 9.5437, function returns true and generation was stopped.
 
+You can limit number of generation values:
+```javascript
+random(1,10).genWhile(function(x){ return x === 11;}, {limit: 10});
+```
+
 # License
 MIT
