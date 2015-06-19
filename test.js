@@ -22,3 +22,22 @@ describe('Test generation 2d array', function(){
        assert.equal(result[0].length,2);
    })
 });
+
+
+describe('Test generation while not found target value', function(){
+    it('should return 10000 values', function(){
+        var result = random(0,10).genWhile(function(i){ return i === 11;});
+        assert.equal(result.length,10000);
+    });
+
+    it('should return 25 values', function(){
+         var result = random(0,10).genWhile(function(i){ return i === 11;}, {limit: 25});
+         assert.equal(result.length, 25);
+    });
+
+    it('should return value greater then 0', function(){
+        var result = random(0,10).genWhile(function(i){ return Math.round(i) === 5;});
+        assert.notEqual(result.length,0);
+    });
+
+});
